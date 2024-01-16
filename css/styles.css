@@ -99,4 +99,7 @@ button:hover {
     font-size: 2.5rem;
 }
 
-
+:root {
+  touch-action: pan-x pan-y;
+  height: 100% 
+}
