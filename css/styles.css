@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #000d8a, #41e2e5);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+/* Add media queries to adjust height and font size of calculator */
+.container-fluid {
+    width: 35%;
+    padding-top: 190px;
+    font-size: 2rem;
+}
+
+@media (min-width: 1500px){
+    .container-fluid {
+        width: 25%!important;
+    }
+}
+
+@media (min-width: 588px) and (max-width: 1000px) {
+    .container-fluid {
+        width: 40%!important;
+        font-size: x-large!important;
+    }
+
+    button {
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 424px) and (max-width: 587px) {
+    .container-fluid {
+        width: 55%!important;
+        font-size: x-large!important;
+    }
+
+    button {
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 423px) {
+    .container-fluid {
+        width: 70%!important;
+        font-size: large!important;
+    }
+
+    button {
+        line-height: 50px;
+    }
+}
+
+button {
+    width: 100%;
+    border: 1px solid white;
+    outline: none;
+    background-color: #dcecea;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.col-3, .col-6 {
+    padding: 0;
+}
+
+.col-12 {
+    background-color: #000000;
+    width: 100%;
+    color: #606369;
+    min-height: 116px;
+}
+
+.output {
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+.output .previous-operand {
+    color: #c1c2c1;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.output .current-operand {
+    color: #f2fffc;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+
